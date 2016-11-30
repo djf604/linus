@@ -3,8 +3,8 @@ import argparse
 
 
 def populate_parser(parser):
-    parser.add_argument('--one', nargs='*', help='First list')
-    parser.add_argument('--two', nargs='*', help='Second list')
+    parser.add_argument('--one', nargs='*', required=True, help='First list')
+    parser.add_argument('--two', nargs='*', required=True, help='Second list')
 
 
 def main(args=None):
